@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sql on Oleh.Ivashko blog</title>
+    <link>https://ivasoft.co.uk/tags/sql/</link>
+    <description>Recent content in Sql on Oleh.Ivashko blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 16 Dec 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://ivasoft.co.uk/tags/sql/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>MySQL Cookbook</title>
+      <link>https://ivasoft.co.uk/post/mysql-cookbook/</link>
+      <pubDate>Sun, 16 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://ivasoft.co.uk/post/mysql-cookbook/</guid>
+      <description>Stop the MySQL service
+sudo /etc/init.d/mysql stop (Ubuntu, Debian): sudo /etc/init.d/mysqld stop(CentOS, Fedora, Red Hat)  Start MySQL without a password
+sudo mysqld_safe --skip-grant-tables &amp;amp;  Connect to MySQL
+mysql -uroot mysql -u root -p (root/pass)  Set a new MySQL root password
+use mysql; update user set password=PASSWORD(&amp;quot;mynewpassword&amp;quot;) where User=&#39;root&#39;; flush privileges; quit  Original</description>
+    </item>
+    
+    <item>
+      <title>Postgres Cookbook</title>
+      <link>https://ivasoft.co.uk/post/postgres-cookbook/</link>
+      <pubDate>Sun, 16 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://ivasoft.co.uk/post/postgres-cookbook/</guid>
+      <description>Начало работы с PostgreSQL Чтобы установить PostgreSQL 9.2 в Ubuntu 12.10, выполните следующие команды:
+sudo apt-add-repository ppa:pitti/postgresql sudo apt-get update sudo apt-get install postgresql-9.2  Дополнение: Для других версий PostgreSQL, версий Ubuntu, а также других дистрибутивов Linux, последовательность шагов аналогичная. Только вместо приведенного PPA я бы все же рекомендовал использовать официальные репозитории пакетов, приведенные на postgresql.org. Также вас могут заинтересовать заметки Потоковая репликация в PostgreSQL и пример фейловера, Некоторые интересные отличия PostgreSQL от MySQL и Как спроектировать схему базы данных.</description>
+    </item>
+    
+  </channel>
+</rss>

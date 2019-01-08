@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>Java Interview Questions. &middot; Oleh.Ivashko blog</title>
+    <meta name="generator" content="Hugo 0.52" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="Oleh Ivashko">
+    
+      <meta name="description" content="Java Interview Questions">
+    
+    
+    <link rel="canonical" href="https://ivasoft.co.uk/post/java-interview-questions/"/>
+    <link rel="icon" href="https://ivasoft.co.uk/favicon.ico">
+    <link rel="apple-touch-icon" href="https://ivasoft.co.uk/apple-touch-icon.png"/>
+    <link rel="stylesheet" href="https://ivasoft.co.uk/src/css/style.css">
+    <link rel="stylesheet" href="https://ivasoft.co.uk/src/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://ivasoft.co.uk/src/css/monokai.css">
+    <link rel="stylesheet" href="https://ivasoft.co.uk/src/fancybox/jquery.fancybox.css">
+    
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+    <meta property="og:title" content="Java Interview Questions." />
+<meta property="og:description" content="Java Interview Questions" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ivasoft.co.uk/post/java-interview-questions/" /><meta property="article:published_time" content="2016-01-01T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2016-01-01T00:00:00&#43;00:00"/>
+
+    
+    
+<meta itemprop="name" content="Java Interview Questions.">
+<meta itemprop="description" content="Java Interview Questions">
+
+
+<meta itemprop="datePublished" content="2016-01-01T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2016-01-01T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="1396">
+
+
+
+<meta itemprop="keywords" content="java,scala,interview," />
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Java Interview Questions."/>
+<meta name="twitter:description" content="Java Interview Questions"/>
+<meta name="twitter:site" content="@Ivashko_Oleg"/>
+
+    
+
+    
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+
+
+
+<div id="container">
+	<header id="header">
+  <div id="header-main" class="header-inner">
+    <div class="outer">
+      <a href="https://ivasoft.co.uk" id="logo">
+          
+          <i class="logo" style="background-image: url('https://ivasoft.co.uk/src/images/logo.png')"></i>
+          
+          <span class="site-title">Oleh.Ivashko blog</span>
+      </a>
+      <nav id="main-nav">
+          
+          
+          <a class="main-nav-link" href="https://ivasoft.co.uk/">Home</a>
+          
+          
+          
+          <a class="main-nav-link" href="https://ivasoft.co.uk/about/">About</a>
+          
+          
+          
+          
+          
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          <a class="main-nav-link" href="https://ivasoft.co.uk/categories/">Categories</a>
+          
+          
+          
+          <a class="main-nav-link" href="https://ivasoft.co.uk/tags/">Tags</a>
+          
+          
+      </nav>
+        <nav id="sub-nav">
+          <div class="profile" id="profile-nav">
+            <a id="profile-anchor" href="javascript:;"><img class="avatar" src="https://ivasoft.co.uk/src/images/avatar.png"><i class="fa fa-caret-down"></i></a>
+          </div>
+        </nav>
+        <div id="search-form-wrap">
+          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form">
+              <input type="search" name="q" class="search-form-input" placeholder="">
+              <button type="submit" class="search-form-submit">
+              </button>
+              <input type="hidden" name="sitesearch" value="https://ivasoft.co.uk" />
+         </form>
+        </div>
+    </div>
+  </div>
+  <div id="main-nav-mobile" class="header-sub header-inner">
+    <table class="menu outer">
+      <tbody>
+          <tr>
+          
+          
+          <td><a class="main-nav-link" href="https://ivasoft.co.uk/">Home</a></td>
+          
+          
+          
+          <td><a class="main-nav-link" href="https://ivasoft.co.uk/about/">About</a></td>
+          
+          
+          
+          
+          
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          <td><a class="main-nav-link" href="https://ivasoft.co.uk/categories/">Categories</a></td>
+          
+          
+          
+          <td><a class="main-nav-link" href="https://ivasoft.co.uk/tags/">Tags</a></td>
+          
+          
+          <td>
+          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form">
+          <input type="search" name="q" class="search-form-input" placeholder="Search">
+          <input type="hidden" name="sitesearch" value="https://ivasoft.co.uk" />
+          </form>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</header>
+
+   	
+   	<div class="outer">
+   	
+    	<aside id="profile">
+  <div class="inner leftbar" style="    margin-top: 40px;">
+
+  	
+<div class="widget-wrap">
+    <h3 class="widget-title">
+        
+    </h3>
+    <div class="widget">
+        <ul id="recent-post">
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://ivasoft.co.uk/post/ffmpeg-main/" class="thumbnail">
+                    
+                        <span style="background-image:url(https://ivasoft.co.uk/banners/ffmpeg.jpeg)" alt="Awesome-console-services" class="thumbnail-image"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://ivasoft.co.uk/categories/cookbook">
+                        cookbook
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://ivasoft.co.uk/post/ffmpeg-main/" class="title">FFmpeg</a></p>
+                    <p class="item-date">
+                        <time datetime="2018-12-16 00:00:00 &#43;0000 UTC" itemprop="datePublished">12/16/2018</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://ivasoft.co.uk/post/mysql-cookbook/" class="thumbnail">
+                    
+                        <span style="background-image:url(https://ivasoft.co.uk/banners/mysql-cookbook.png)" alt="Awesome-console-services" class="thumbnail-image"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://ivasoft.co.uk/categories/cookbook">
+                        cookbook
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://ivasoft.co.uk/post/mysql-cookbook/" class="title">MySQL Cookbook</a></p>
+                    <p class="item-date">
+                        <time datetime="2018-12-16 00:00:00 &#43;0000 UTC" itemprop="datePublished">12/16/2018</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://ivasoft.co.uk/post/postgres-cookbook/" class="thumbnail">
+                    
+                        <span style="background-image:url(https://ivasoft.co.uk/banners/mysql-cookbook.png)" alt="Awesome-console-services" class="thumbnail-image"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://ivasoft.co.uk/categories/cookbook">
+                        cookbook
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://ivasoft.co.uk/post/postgres-cookbook/" class="title">Postgres Cookbook</a></p>
+                    <p class="item-date">
+                        <time datetime="2018-12-16 00:00:00 &#43;0000 UTC" itemprop="datePublished">12/16/2018</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://ivasoft.co.uk/post/awesome-console-services/" class="thumbnail">
+                    
+                        <span style="background-image:url(https://ivasoft.co.uk/banners/awesome-console-services.png)" alt="Awesome-console-services" class="thumbnail-image"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://ivasoft.co.uk/categories/work">
+                        work
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://ivasoft.co.uk/post/awesome-console-services/" class="title">Awesome-console-services</a></p>
+                    <p class="item-date">
+                        <time datetime="2017-04-02 00:00:00 &#43;0000 UTC" itemprop="datePublished">04/02/2017</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://ivasoft.co.uk/post/checklist-for-a-job-offer/" class="thumbnail">
+                    
+                        <span style="background-image:url(https://ivasoft.co.uk/banners/Checklist-for-a-job%20offer.png)" alt="Awesome-console-services" class="thumbnail-image"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://ivasoft.co.uk/categories/work">
+                        work
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://ivasoft.co.uk/post/checklist-for-a-job-offer/" class="title">Чек-лист предложений о работе</a></p>
+                    <p class="item-date">
+                        <time datetime="2017-04-02 00:00:00 &#43;0000 UTC" itemprop="datePublished">04/02/2017</time>
+                    </p>
+                </div>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+ 
+  	  
+
+
+<div class="widget-wrap">
+    <h3 class="widget-title"></h3>
+    <div class="widget">
+        <ul class="category-list">
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://ivasoft.co.uk/categories/cookbook">
+                    cookbook
+                </a>
+                <span class="category-list-count">3</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://ivasoft.co.uk/categories/work">
+                    work
+                </a>
+                <span class="category-list-count">3</span>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+	</div>
+
+
+</aside>
+
+    
+
+    <section id="main">
+    
+    <article id="page-undefined" class="article article-type-page" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+            <img src="https://ivasoft.co.uk/banners/Java-Interview-Questions.jpg" class="article-banner">
+        
+
+        <header class="article-header">
+    <a href="https://ivasoft.co.uk/post/java-interview-questions/">
+    <h1 class="article-title" itemprop="name">
+        Java Interview Questions.
+    </h1>
+    </a>
+    <div class="article-meta">
+
+        
+        <div class="article-date">
+            <i class="fa fa-calendar"></i>
+            <time datetime="2016-01-01 00:00:00 &#43;0000 UTC" itemprop="datePublished">01/01/2016</time>
+            &middot;
+            1396
+            
+            &middot;
+            7
+            
+        </div>
+        
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-folder"></i>
+                
+                
+                <a class="article-category-link" href="https://ivasoft.co.uk/categories/work">work</a>
+                
+                
+            </div>
+            
+        
+
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-tags"></i>
+                
+                
+                <a class="article-category-link" href="https://ivasoft.co.uk/tags/java">java</a>
+                &middot;
+                
+                
+                <a class="article-category-link" href="https://ivasoft.co.uk/tags/scala">scala</a>
+                &middot;
+                
+                
+                <a class="article-category-link" href="https://ivasoft.co.uk/tags/interview">interview</a>
+                
+                
+            </div>
+            
+        
+    </div>
+</header>
+
+        <div class="article-entry" itemprop="articleBody">
+            
+
+<p>I have written a lot of posts for java interview questions, this is a placeholder for all those posts. You can bookmark this post and come again in future to see the new additions.</p>
+
+<h3 id="1-core-java-interview-questions-and-answers">1. Core Java Interview Questions and Answers</h3>
+
+<p>Core Java is the starting point of any Java interview. Whether you are fresher or experienced in java, having a strong grip on Core Java is very important to clear the interview. This article lists down some of the commonly asked core java interview questions with answers.</p>
+
+<h3 id="2-java-8-interview-questions">2.  Java 8 Interview Questions</h3>
+
+<p>Java 8 was a major release with many new features such as Lambdas, Functional interfaces, Streams, Date Time API etc. This is a must have if you are going to any java interview because it’s always good to be aware of latest language changes.
+I recently wrote another article as part-2 of java 8 interview questions, please go through this too.</p>
+
+<h3 id="3-java-collections-interview-questions-and-answers">3.  Java Collections Interview Questions and Answers</h3>
+
+<p>Collections are core components of Java programming language and hence widely used in interview questions. The post contains 40 questions on java collections to make sure all the topics are covered and help you in impressing your interviewer.
+I also recommend to check out java collections tutorial to have a deep knowledge of Collections in java.</p>
+
+<h3 id="4-java-string-interview-questions-and-answers">4.  Java String Interview Questions and Answers</h3>
+
+<p>Everybody uses String and usually java interview starts with some tricky questions on Java String. This post contains 21 questions with detailed answers for String in java.</p>
+
+<h3 id="5-java-multi-threading-and-concurrency-interview-questions">5.  Java Multi-Threading and Concurrency Interview Questions</h3>
+
+<p>Multithreading and Concurrency is a hot topic in java interviews. Whether you are new to Java or an expert, its good to have good knowledge on Threads in java and this post covers 30+ interview questions for Java Threads.
+I also recommend you to read Java Thread Tutorial to gain good knowledge on Threads.</p>
+
+<h3 id="6-java-exception-handling-interview-questions">6.  Java Exception Handling Interview Questions</h3>
+
+<p>Exception Handling is one of the tricky area and Java provides a robust and object-oriented approach for exception handling. There are Exception, Error and Throwable at the root of Exception Handling. I have seen so many guys who are confused in checked, un-checked and runtime exceptions. Here you will go through a list of 15 questions entirely related to Exception Handling in Java.
+I would also advice to go through Java Exception Handling Tutorial before jumping into interview questions directly.</p>
+
+<h3 id="7-difference-between-jdk-jre-and-jvm">7.  Difference between JDK, JRE and JVM</h3>
+
+<p>You should know about java virtual machine, runtime envirimport and java compiler. A post dedicated to explain these and list out their differences.</p>
+
+<h3 id="8-java-classloaders-https-github-com-oleiva-java-interview-questions-blob-master-java-20classloader-md">8.<a href="https://github.com/Oleiva/Java-Interview-Questions/blob/master/Java%20ClassLoader.md">Java Classloaders</a></h3>
+
+<p>If you consider yourself an expert in java, be prepared to face some questions on Java Classloader. A comprehensive post providing detailed explanation of different types of java classloaders, how and when we should write our own classloaders with example programs.</p>
+
+<h3 id="9-difference-between-abstract-class-and-interface">9.  Difference between Abstract Class and Interface</h3>
+
+<p>Abstract classes and interfaces are used in java for providing contract but what is the difference between them and when should we use interface over abstract class and vice versa is a great design question and asked a lot in java interviews. This post provides all the differences between abstract class and interface and when should we use interface over abstract class and vice versa. The post also explains how to use abstract class and interface both in conjunction to create a flexible design for providing contract for subclasses. I also recommend to read java abstract class and interface in javatutorials.</p>
+
+<h3 id="10-why-java-doesn-t-support-multiple-inheritance-and-composition-vs-inheritance">10. Why Java Doesn’t support multiple inheritance and Composition vs Inheritance</h3>
+
+<p>One of the mostly asked question is why java doesn’t support multiple inheritance and why should we prefer composition over inheritance. A post with detailed explanation of multiple inheritance and issues with inheritance that make composition a better approach.</p>
+
+<h3 id="11-java-programming-interview-questions">11. Java Programming Interview Questions</h3>
+
+<p>Some tricky questions to test your programming skills, also check out java tricky code snippets.</p>
+
+<h3 id="12-java-7-catch-block">12. Java 7 Catch Block</h3>
+
+<p>Java 7 catch block has been improved to catch multiple exceptions in a single block, a good improvement for making our catch block code small when we needed to catch a lot of exceptions.</p>
+
+<h3 id="13-java-heap-memory-vs-stack-memory-https-github-com-oleiva-java-interview-questions-blob-en-javaheapspacevsstack-md">13. <a href="https://github.com/Oleiva/Java-Interview-Questions/blob/EN/JavaHeapSpaceVsStack.md">Java Heap Memory vs Stack Memory</a></h3>
+
+<p>JVM runtime memory is divided into heap memory and stack memory. An important article explaining the difference between Heap and Stack memory through program. I recently published a YouTube video too, make sure to watch that for better understanding.</p>
+
+<h3 id="14-java-is-pass-by-value-or-pass-by-reference">14. Java is Pass By Value or Pass by Reference</h3>
+
+<p>This is one of the most confusing question about java programming language. Some say it’s pass by value and somewhere you will read that it’s pass by reference. Then again behaviour changes for primitive types or Objects parameters? Read this out to clear this confusion once and for all. This is one of the favorite question asked by java interviewers.
+Java EE Interview Questions</p>
+
+<h3 id="15-jdbc-interview-questions-and-answers">15. JDBC Interview Questions and Answers</h3>
+
+<p>If you are working on Enterprise applications, I am sure that JDBC API is a part of it. JDBC API provides database connectivity for relational databases, such as MySQL and Oracle.
+This article go through a collection of 40+ interview questions related to JDBC API from basic Connection to DataSource to Connection Pooling. It will help you in interviews for questions related to JDBC API and how to effectively use it.
+If you are new to JDBC or you have a lot of experience, I would still suggest you to go through JDBC Tutorial to make sure you have covered all the core parts of it.</p>
+
+<h3 id="16-servlet-interview-questions-with-answers">16. Servlet Interview Questions with Answers</h3>
+
+<p>Servlets are one of the hot topics of Java Enterprise Edition interview questions. This post contains a list of 50 servlet interview questions with answers in detail. A must have bookmarked post because I will keep on adding more questions in future.</p>
+
+<h3 id="17-jsp-interview-questions-and-answers">17. JSP Interview Questions and Answers</h3>
+
+<p>JSP is the integral part of Java EE and if you are giving interview for web developer, then having good knowledge of JSP technology is very important. This post contains a list of 35 JSP interview questions with answers. Please make sure to bookmark it because I will be keep on adding more to the list in future.</p>
+
+<h3 id="18-struts-interview-questions-and-answers">18. Struts Interview Questions and Answers</h3>
+
+<p>Struts2 is one of the modern Java Web Application framework. This article contains a list of 30 questions that covers most of the important components of Struts2 framework.</p>
+
+<h3 id="19-spring-interview-questions-and-answers">19. Spring Interview Questions and Answers</h3>
+
+<p>Spring Framework is most widely used Java EE framework. It’s built on core principles of “Dependency Injection” and “Aspect Oriented Programming”. This post contains more than 45 questions related to Spring Framework, Dependency Injection, Spring AOP, Spring JDBC, Spring MVC Framework and some common tasks such as file uploading, localization etc. A good post to go through before any Java EE interview.</p>
+
+<h3 id="20-web-services-interview-questions">20. Web Services Interview Questions</h3>
+
+<p>Web services are very popular these days because they are language and platform independent. It’s easy to create SOAP and REST based web services. This post will help you learn about web services and related interview questions. Then there are questions with detailed answers for Java Web Services.</p>
+
+<h3 id="21-jsf-interview-questions">21. JSF Interview Questions</h3>
+
+<p>More than 50 questions on JSF-2 with detailed answers, go through them as a refresher on JSF framework.</p>
+
+<h3 id="22-hibernate-interview-questions-and-answers">22. Hibernate Interview Questions and Answers</h3>
+
+<p>Hibernate is the best java based ORM tool in the market. It’s used a lot in most of the enterprise applications to overcome the shortcomings of JDBC. One of the best part with hibernate is the flexibility of configuration using XML, JPA annotations as well as through code. So it’s always a plus point to have Hibernate in your resume. Whether you are experienced with hibernate or newbie, these questions will help you in interview and impress your interviewer.</p>
+
+<h3 id="23-scala-interview-questions">23. Scala Interview Questions</h3>
+
+<p>Scala is famous programming language that provides functional programming in Java. I have written three successive posts too that you can go though for scala interview preparation.
+•   Scala intermediate interview questions
+•   Scala intermediate and advanced interview questions
+•   Scala advanced interview questions</p>
+
+<ol>
+<li>Common Job Interview Questions
+For clearing an interview, only technical knowledge is not enough. You will have to go through common job interview questions such as your last company experience, why you are looking for change etc. This is a post with 40 job interview questions that are asked in almost all the interviews.</li>
+</ol>
+
+        </div>
+        <footer class="article-footer">
+    <a data-url="https://ivasoft.co.uk/post/java-interview-questions/" data-id="7ec86833146c2ffa1f5f87b354138fb8" class="article-share-link">
+        <i class="fa fa-share"></i>
+        
+    </a>
+    
+    <a href="https://ivasoft.co.uk/post/java-interview-questions/#disqus_thread" class="article-comment-link">
+        
+    </a>
+    
+
+    <script>
+    (function ($) {
+        
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+    </script>
+</footer>
+
+    </div>
+
+    
+<nav id="article-nav">
+    
+
+    
+    <a href="https://ivasoft.co.uk/post/checklist-for-a-job-offer/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">
+          
+      </strong>
+      <div class="article-nav-title">Чек-лист предложений о работе</div>
+    </a>
+    
+</nav>
+
+
+</article>
+
+
+<section id="comments">
+    <div id="disqus_thread">
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "http-oleiva-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+</section>
+
+
+    </section>
+
+   	
+    	<aside id="sidebar">
+    
+  
+    
+
+
+<div class="widget-wrap">
+    <h3 class="widget-title">
+        
+    </h3>
+    <div class="widget">
+        <ul class="category-list">
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://ivasoft.co.uk/tags/checklist">
+                    checklist
+                </a>
+                <span class="category-list-count">2</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://ivasoft.co.uk/tags/cookbook">
+                    cookbook
+                </a>
+                <span class="category-list-count">3</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://ivasoft.co.uk/tags/ffmpeg">
+                    ffmpeg
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://ivasoft.co.uk/tags/interview">
+                    interview
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://ivasoft.co.uk/tags/java">
+                    java
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://ivasoft.co.uk/tags/job">
+                    job
+                </a>
+                <span class="category-list-count">2</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://ivasoft.co.uk/tags/mysql">
+                    mysql
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://ivasoft.co.uk/tags/postgres">
+                    postgres
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://ivasoft.co.uk/tags/scala">
+                    scala
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://ivasoft.co.uk/tags/sql">
+                    sql
+                </a>
+                <span class="category-list-count">2</span>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+    
+
+
+<div class="widget-wrap">
+    <h3 class="widget-title">
+        
+    </h3>
+    <div class="widget tagcloud">
+        
+        
+        <a href="https://ivasoft.co.uk/tags/checklist" style="font-size: 12px;">checklist</a>
+        
+        
+        <a href="https://ivasoft.co.uk/tags/cookbook" style="font-size: 12px;">cookbook</a>
+        
+        
+        <a href="https://ivasoft.co.uk/tags/ffmpeg" style="font-size: 12px;">ffmpeg</a>
+        
+        
+        <a href="https://ivasoft.co.uk/tags/interview" style="font-size: 12px;">interview</a>
+        
+        
+        <a href="https://ivasoft.co.uk/tags/java" style="font-size: 12px;">java</a>
+        
+        
+        <a href="https://ivasoft.co.uk/tags/job" style="font-size: 12px;">job</a>
+        
+        
+        <a href="https://ivasoft.co.uk/tags/mysql" style="font-size: 12px;">mysql</a>
+        
+        
+        <a href="https://ivasoft.co.uk/tags/postgres" style="font-size: 12px;">postgres</a>
+        
+        
+        <a href="https://ivasoft.co.uk/tags/scala" style="font-size: 12px;">scala</a>
+        
+        
+        <a href="https://ivasoft.co.uk/tags/sql" style="font-size: 12px;">sql</a>
+        
+    </div>
+</div>
+
+
+
+
+
+    <div id="toTop" class="fa fa-angle-up"></div>
+</aside>
+
+    
+	</div>
+</div>
+
+<footer id="footer">
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019
+      Powered by <a href="http://Ivasoft.co.uk">Oleh Ivashko</a>
+    </div>
+  </div>
+</footer>
+
+
+<script type="text/javascript">
+	console.log("statystics");
+</script>
+
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(51714932, "init", {
+        id:51714932,
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/51714932" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-37590395-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-37590395-2');
+</script>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-85686153-4', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+<script src="https://ivasoft.co.uk/src/fancybox/jquery.fancybox.pack.js"></script>
+<script src="https://ivasoft.co.uk/src/js/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']]}
+  });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+
+
+</body>
+</html>

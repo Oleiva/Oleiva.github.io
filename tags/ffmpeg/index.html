@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>Ffmpeg &middot; Oleh.Ivashko blog</title>
+    <meta name="generator" content="Hugo 0.52" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="Oleh Ivashko">
+    
+      <meta name="description" content="Oleh.Ivashko blog">
+    
+    
+      <link href="https://ivasoft.co.uk/tags/ffmpeg/index.xml" rel="alternate" type="application/rss+xml" title="Oleh.Ivashko blog" />
+      <link href="https://ivasoft.co.uk/tags/ffmpeg/index.xml" rel="feed" type="application/rss+xml" title="Oleh.Ivashko blog" />
+    
+    <link rel="canonical" href="https://ivasoft.co.uk/tags/ffmpeg/"/>
+    <link rel="icon" href="https://ivasoft.co.uk/favicon.ico">
+    <link rel="apple-touch-icon" href="https://ivasoft.co.uk/apple-touch-icon.png"/>
+    <link rel="stylesheet" href="https://ivasoft.co.uk/src/css/style.css">
+    <link rel="stylesheet" href="https://ivasoft.co.uk/src/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://ivasoft.co.uk/src/css/monokai.css">
+    <link rel="stylesheet" href="https://ivasoft.co.uk/src/fancybox/jquery.fancybox.css">
+    
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+    <meta property="og:title" content="Ffmpeg" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://ivasoft.co.uk/tags/ffmpeg/" />
+<meta property="og:updated_time" content="2018-12-16T00:00:00&#43;00:00"/>
+
+    
+    
+<meta itemprop="name" content="Ffmpeg">
+<meta itemprop="description" content="">
+
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Ffmpeg"/>
+<meta name="twitter:description" content=""/>
+<meta name="twitter:site" content="@Ivashko_Oleg"/>
+
+    
+
+    
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+
+
+
+<div id="container">
+	<header id="header">
+  <div id="header-main" class="header-inner">
+    <div class="outer">
+      <a href="https://ivasoft.co.uk" id="logo">
+          
+          <i class="logo" style="background-image: url('https://ivasoft.co.uk/src/images/logo.png')"></i>
+          
+          <span class="site-title">Oleh.Ivashko blog</span>
+      </a>
+      <nav id="main-nav">
+          
+          
+          <a class="main-nav-link" href="https://ivasoft.co.uk/">Home</a>
+          
+          
+          
+          <a class="main-nav-link" href="https://ivasoft.co.uk/about/">About</a>
+          
+          
+          
+          
+          
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          <a class="main-nav-link" href="https://ivasoft.co.uk/categories/">Categories</a>
+          
+          
+          
+          <a class="main-nav-link" href="https://ivasoft.co.uk/tags/">Tags</a>
+          
+          
+      </nav>
+        <nav id="sub-nav">
+          <div class="profile" id="profile-nav">
+            <a id="profile-anchor" href="javascript:;"><img class="avatar" src="https://ivasoft.co.uk/src/images/avatar.png"><i class="fa fa-caret-down"></i></a>
+          </div>
+        </nav>
+        <div id="search-form-wrap">
+          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form">
+              <input type="search" name="q" class="search-form-input" placeholder="">
+              <button type="submit" class="search-form-submit">
+              </button>
+              <input type="hidden" name="sitesearch" value="https://ivasoft.co.uk" />
+         </form>
+        </div>
+    </div>
+  </div>
+  <div id="main-nav-mobile" class="header-sub header-inner">
+    <table class="menu outer">
+      <tbody>
+          <tr>
+          
+          
+          <td><a class="main-nav-link" href="https://ivasoft.co.uk/">Home</a></td>
+          
+          
+          
+          <td><a class="main-nav-link" href="https://ivasoft.co.uk/about/">About</a></td>
+          
+          
+          
+          
+          
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          <td><a class="main-nav-link" href="https://ivasoft.co.uk/categories/">Categories</a></td>
+          
+          
+          
+          <td><a class="main-nav-link" href="https://ivasoft.co.uk/tags/">Tags</a></td>
+          
+          
+          <td>
+          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form">
+          <input type="search" name="q" class="search-form-input" placeholder="Search">
+          <input type="hidden" name="sitesearch" value="https://ivasoft.co.uk" />
+          </form>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</header>
+
+   	
+   	<div class="outer">
+   	
+    	<aside id="profile">
+  <div class="inner leftbar" style="    margin-top: 40px;">
+
+  	
+<div class="widget-wrap">
+    <h3 class="widget-title">
+        
+    </h3>
+    <div class="widget">
+        <ul id="recent-post">
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://ivasoft.co.uk/post/ffmpeg-main/" class="thumbnail">
+                    
+                        <span style="background-image:url(https://ivasoft.co.uk/banners/ffmpeg.jpeg)" alt="Awesome-console-services" class="thumbnail-image"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://ivasoft.co.uk/categories/cookbook">
+                        cookbook
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://ivasoft.co.uk/post/ffmpeg-main/" class="title">FFmpeg</a></p>
+                    <p class="item-date">
+                        <time datetime="2018-12-16 00:00:00 &#43;0000 UTC" itemprop="datePublished">12/16/2018</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://ivasoft.co.uk/post/mysql-cookbook/" class="thumbnail">
+                    
+                        <span style="background-image:url(https://ivasoft.co.uk/banners/mysql-cookbook.png)" alt="Awesome-console-services" class="thumbnail-image"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://ivasoft.co.uk/categories/cookbook">
+                        cookbook
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://ivasoft.co.uk/post/mysql-cookbook/" class="title">MySQL Cookbook</a></p>
+                    <p class="item-date">
+                        <time datetime="2018-12-16 00:00:00 &#43;0000 UTC" itemprop="datePublished">12/16/2018</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://ivasoft.co.uk/post/postgres-cookbook/" class="thumbnail">
+                    
+                        <span style="background-image:url(https://ivasoft.co.uk/banners/mysql-cookbook.png)" alt="Awesome-console-services" class="thumbnail-image"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://ivasoft.co.uk/categories/cookbook">
+                        cookbook
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://ivasoft.co.uk/post/postgres-cookbook/" class="title">Postgres Cookbook</a></p>
+                    <p class="item-date">
+                        <time datetime="2018-12-16 00:00:00 &#43;0000 UTC" itemprop="datePublished">12/16/2018</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://ivasoft.co.uk/post/awesome-console-services/" class="thumbnail">
+                    
+                        <span style="background-image:url(https://ivasoft.co.uk/banners/awesome-console-services.png)" alt="Awesome-console-services" class="thumbnail-image"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://ivasoft.co.uk/categories/work">
+                        work
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://ivasoft.co.uk/post/awesome-console-services/" class="title">Awesome-console-services</a></p>
+                    <p class="item-date">
+                        <time datetime="2017-04-02 00:00:00 &#43;0000 UTC" itemprop="datePublished">04/02/2017</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://ivasoft.co.uk/post/checklist-for-a-job-offer/" class="thumbnail">
+                    
+                        <span style="background-image:url(https://ivasoft.co.uk/banners/Checklist-for-a-job%20offer.png)" alt="Awesome-console-services" class="thumbnail-image"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://ivasoft.co.uk/categories/work">
+                        work
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://ivasoft.co.uk/post/checklist-for-a-job-offer/" class="title">Чек-лист предложений о работе</a></p>
+                    <p class="item-date">
+                        <time datetime="2017-04-02 00:00:00 &#43;0000 UTC" itemprop="datePublished">04/02/2017</time>
+                    </p>
+                </div>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+ 
+  	  
+
+
+<div class="widget-wrap">
+    <h3 class="widget-title"></h3>
+    <div class="widget">
+        <ul class="category-list">
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://ivasoft.co.uk/categories/cookbook">
+                    cookbook
+                </a>
+                <span class="category-list-count">3</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://ivasoft.co.uk/categories/work">
+                    work
+                </a>
+                <span class="category-list-count">3</span>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+	</div>
+
+
+</aside>
+
+    
+
+    <section id="main">
+    
+    
+    
+    
+    <section class="archives-wrap">
+        <div class="archive-category-wrap">
+            <span class="archive-category">Ffmpeg</span>
+        </div>
+        <div class="archives">
+            
+            
+                <article class="archive-article archive-type-post">
+    <div class="archive-article-inner">
+        <div class="archive-article-thumbnail">
+            
+            <a href="https://ivasoft.co.uk/post/ffmpeg-main/" class="thumbnail">
+                <span style="background-image:url(https://ivasoft.co.uk/banners/ffmpeg.jpeg)" alt="FFmpeg" class="thumbnail-image"></span>
+            </a>
+            
+        </div>
+        <header class="archive-article-header">
+            <h1 itemprop="name">
+            <a class="archive-article-title" href="https://ivasoft.co.uk/post/ffmpeg-main/">FFmpeg</a>
+            </h1>
+            <div class="archive-article-date">
+                <i class="fa fa-calendar"></i>
+                <time datetime="2018-12-16 00:00:00 &#43;0000 UTC" itemprop="datePublished">12/16/2018</time>
+            </div>
+        </header>
+    </div>
+</article>
+ 
+            
+        </div>
+    </section>
+    <nav id="page-nav">
+
+</nav>
+
+    
+
+    </section>
+
+   	
+    	<aside id="sidebar">
+    
+  
+    
+
+
+<div class="widget-wrap">
+    <h3 class="widget-title">
+        
+    </h3>
+    <div class="widget">
+        <ul class="category-list">
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://ivasoft.co.uk/tags/checklist">
+                    checklist
+                </a>
+                <span class="category-list-count">2</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://ivasoft.co.uk/tags/cookbook">
+                    cookbook
+                </a>
+                <span class="category-list-count">3</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://ivasoft.co.uk/tags/ffmpeg">
+                    ffmpeg
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://ivasoft.co.uk/tags/interview">
+                    interview
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://ivasoft.co.uk/tags/java">
+                    java
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://ivasoft.co.uk/tags/job">
+                    job
+                </a>
+                <span class="category-list-count">2</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://ivasoft.co.uk/tags/mysql">
+                    mysql
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://ivasoft.co.uk/tags/postgres">
+                    postgres
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://ivasoft.co.uk/tags/scala">
+                    scala
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://ivasoft.co.uk/tags/sql">
+                    sql
+                </a>
+                <span class="category-list-count">2</span>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+    
+
+
+<div class="widget-wrap">
+    <h3 class="widget-title">
+        
+    </h3>
+    <div class="widget tagcloud">
+        
+        
+        <a href="https://ivasoft.co.uk/tags/checklist" style="font-size: 12px;">checklist</a>
+        
+        
+        <a href="https://ivasoft.co.uk/tags/cookbook" style="font-size: 12px;">cookbook</a>
+        
+        
+        <a href="https://ivasoft.co.uk/tags/ffmpeg" style="font-size: 12px;">ffmpeg</a>
+        
+        
+        <a href="https://ivasoft.co.uk/tags/interview" style="font-size: 12px;">interview</a>
+        
+        
+        <a href="https://ivasoft.co.uk/tags/java" style="font-size: 12px;">java</a>
+        
+        
+        <a href="https://ivasoft.co.uk/tags/job" style="font-size: 12px;">job</a>
+        
+        
+        <a href="https://ivasoft.co.uk/tags/mysql" style="font-size: 12px;">mysql</a>
+        
+        
+        <a href="https://ivasoft.co.uk/tags/postgres" style="font-size: 12px;">postgres</a>
+        
+        
+        <a href="https://ivasoft.co.uk/tags/scala" style="font-size: 12px;">scala</a>
+        
+        
+        <a href="https://ivasoft.co.uk/tags/sql" style="font-size: 12px;">sql</a>
+        
+    </div>
+</div>
+
+
+
+
+
+    <div id="toTop" class="fa fa-angle-up"></div>
+</aside>
+
+    
+	</div>
+</div>
+
+<footer id="footer">
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019
+      Powered by <a href="http://Ivasoft.co.uk">Oleh Ivashko</a>
+    </div>
+  </div>
+</footer>
+
+
+<script type="text/javascript">
+	console.log("statystics");
+</script>
+
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(51714932, "init", {
+        id:51714932,
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/51714932" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-37590395-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-37590395-2');
+</script>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-85686153-4', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+<script src="https://ivasoft.co.uk/src/fancybox/jquery.fancybox.pack.js"></script>
+<script src="https://ivasoft.co.uk/src/js/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']]}
+  });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+
+
+</body>
+</html>

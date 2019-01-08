@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>FFmpeg &middot; Oleh.Ivashko blog</title>
+    <meta name="generator" content="Hugo 0.52" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="Oleh Ivashko">
+    
+      <meta name="description" content="ffmpeg">
+    
+    
+    <link rel="canonical" href="https://ivasoft.co.uk/post/ffmpeg-main/"/>
+    <link rel="icon" href="https://ivasoft.co.uk/favicon.ico">
+    <link rel="apple-touch-icon" href="https://ivasoft.co.uk/apple-touch-icon.png"/>
+    <link rel="stylesheet" href="https://ivasoft.co.uk/src/css/style.css">
+    <link rel="stylesheet" href="https://ivasoft.co.uk/src/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://ivasoft.co.uk/src/css/monokai.css">
+    <link rel="stylesheet" href="https://ivasoft.co.uk/src/fancybox/jquery.fancybox.css">
+    
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+    <meta property="og:title" content="FFmpeg" />
+<meta property="og:description" content="ffmpeg" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ivasoft.co.uk/post/ffmpeg-main/" /><meta property="article:published_time" content="2018-12-16T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2018-12-16T00:00:00&#43;00:00"/>
+
+    
+    
+<meta itemprop="name" content="FFmpeg">
+<meta itemprop="description" content="ffmpeg">
+
+
+<meta itemprop="datePublished" content="2018-12-16T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2018-12-16T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="1391">
+
+
+
+<meta itemprop="keywords" content="cookbook,ffmpeg," />
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="FFmpeg"/>
+<meta name="twitter:description" content="ffmpeg"/>
+<meta name="twitter:site" content="@Ivashko_Oleg"/>
+
+    
+
+    
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+
+
+
+<div id="container">
+	<header id="header">
+  <div id="header-main" class="header-inner">
+    <div class="outer">
+      <a href="https://ivasoft.co.uk" id="logo">
+          
+          <i class="logo" style="background-image: url('https://ivasoft.co.uk/src/images/logo.png')"></i>
+          
+          <span class="site-title">Oleh.Ivashko blog</span>
+      </a>
+      <nav id="main-nav">
+          
+          
+          <a class="main-nav-link" href="https://ivasoft.co.uk/">Home</a>
+          
+          
+          
+          <a class="main-nav-link" href="https://ivasoft.co.uk/about/">About</a>
+          
+          
+          
+          
+          
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          <a class="main-nav-link" href="https://ivasoft.co.uk/categories/">Categories</a>
+          
+          
+          
+          <a class="main-nav-link" href="https://ivasoft.co.uk/tags/">Tags</a>
+          
+          
+      </nav>
+        <nav id="sub-nav">
+          <div class="profile" id="profile-nav">
+            <a id="profile-anchor" href="javascript:;"><img class="avatar" src="https://ivasoft.co.uk/src/images/avatar.png"><i class="fa fa-caret-down"></i></a>
+          </div>
+        </nav>
+        <div id="search-form-wrap">
+          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form">
+              <input type="search" name="q" class="search-form-input" placeholder="">
+              <button type="submit" class="search-form-submit">
+              </button>
+              <input type="hidden" name="sitesearch" value="https://ivasoft.co.uk" />
+         </form>
+        </div>
+    </div>
+  </div>
+  <div id="main-nav-mobile" class="header-sub header-inner">
+    <table class="menu outer">
+      <tbody>
+          <tr>
+          
+          
+          <td><a class="main-nav-link" href="https://ivasoft.co.uk/">Home</a></td>
+          
+          
+          
+          <td><a class="main-nav-link" href="https://ivasoft.co.uk/about/">About</a></td>
+          
+          
+          
+          
+          
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          <td><a class="main-nav-link" href="https://ivasoft.co.uk/categories/">Categories</a></td>
+          
+          
+          
+          <td><a class="main-nav-link" href="https://ivasoft.co.uk/tags/">Tags</a></td>
+          
+          
+          <td>
+          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form">
+          <input type="search" name="q" class="search-form-input" placeholder="Search">
+          <input type="hidden" name="sitesearch" value="https://ivasoft.co.uk" />
+          </form>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</header>
+
+   	
+   	<div class="outer">
+   	
+    	<aside id="profile">
+  <div class="inner leftbar" style="    margin-top: 40px;">
+
+  	
+<div class="widget-wrap">
+    <h3 class="widget-title">
+        
+    </h3>
+    <div class="widget">
+        <ul id="recent-post">
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://ivasoft.co.uk/post/ffmpeg-main/" class="thumbnail">
+                    
+                        <span style="background-image:url(https://ivasoft.co.uk/banners/ffmpeg.jpeg)" alt="Awesome-console-services" class="thumbnail-image"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://ivasoft.co.uk/categories/cookbook">
+                        cookbook
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://ivasoft.co.uk/post/ffmpeg-main/" class="title">FFmpeg</a></p>
+                    <p class="item-date">
+                        <time datetime="2018-12-16 00:00:00 &#43;0000 UTC" itemprop="datePublished">12/16/2018</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://ivasoft.co.uk/post/mysql-cookbook/" class="thumbnail">
+                    
+                        <span style="background-image:url(https://ivasoft.co.uk/banners/mysql-cookbook.png)" alt="Awesome-console-services" class="thumbnail-image"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://ivasoft.co.uk/categories/cookbook">
+                        cookbook
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://ivasoft.co.uk/post/mysql-cookbook/" class="title">MySQL Cookbook</a></p>
+                    <p class="item-date">
+                        <time datetime="2018-12-16 00:00:00 &#43;0000 UTC" itemprop="datePublished">12/16/2018</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://ivasoft.co.uk/post/postgres-cookbook/" class="thumbnail">
+                    
+                        <span style="background-image:url(https://ivasoft.co.uk/banners/mysql-cookbook.png)" alt="Awesome-console-services" class="thumbnail-image"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://ivasoft.co.uk/categories/cookbook">
+                        cookbook
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://ivasoft.co.uk/post/postgres-cookbook/" class="title">Postgres Cookbook</a></p>
+                    <p class="item-date">
+                        <time datetime="2018-12-16 00:00:00 &#43;0000 UTC" itemprop="datePublished">12/16/2018</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://ivasoft.co.uk/post/awesome-console-services/" class="thumbnail">
+                    
+                        <span style="background-image:url(https://ivasoft.co.uk/banners/awesome-console-services.png)" alt="Awesome-console-services" class="thumbnail-image"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://ivasoft.co.uk/categories/work">
+                        work
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://ivasoft.co.uk/post/awesome-console-services/" class="title">Awesome-console-services</a></p>
+                    <p class="item-date">
+                        <time datetime="2017-04-02 00:00:00 &#43;0000 UTC" itemprop="datePublished">04/02/2017</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://ivasoft.co.uk/post/checklist-for-a-job-offer/" class="thumbnail">
+                    
+                        <span style="background-image:url(https://ivasoft.co.uk/banners/Checklist-for-a-job%20offer.png)" alt="Awesome-console-services" class="thumbnail-image"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://ivasoft.co.uk/categories/work">
+                        work
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://ivasoft.co.uk/post/checklist-for-a-job-offer/" class="title">Чек-лист предложений о работе</a></p>
+                    <p class="item-date">
+                        <time datetime="2017-04-02 00:00:00 &#43;0000 UTC" itemprop="datePublished">04/02/2017</time>
+                    </p>
+                </div>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+ 
+  	  
+
+
+<div class="widget-wrap">
+    <h3 class="widget-title"></h3>
+    <div class="widget">
+        <ul class="category-list">
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://ivasoft.co.uk/categories/cookbook">
+                    cookbook
+                </a>
+                <span class="category-list-count">3</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://ivasoft.co.uk/categories/work">
+                    work
+                </a>
+                <span class="category-list-count">3</span>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+	</div>
+
+
+</aside>
+
+    
+
+    <section id="main">
+    
+    <article id="page-undefined" class="article article-type-page" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+            <img src="https://ivasoft.co.uk/banners/ffmpeg.jpeg" class="article-banner">
+        
+
+        <header class="article-header">
+    <a href="https://ivasoft.co.uk/post/ffmpeg-main/">
+    <h1 class="article-title" itemprop="name">
+        FFmpeg
+    </h1>
+    </a>
+    <div class="article-meta">
+
+        
+        <div class="article-date">
+            <i class="fa fa-calendar"></i>
+            <time datetime="2018-12-16 00:00:00 &#43;0000 UTC" itemprop="datePublished">12/16/2018</time>
+            &middot;
+            1391
+            
+            &middot;
+            7
+            
+        </div>
+        
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-folder"></i>
+                
+                
+                <a class="article-category-link" href="https://ivasoft.co.uk/categories/cookbook">cookbook</a>
+                
+                
+            </div>
+            
+        
+
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-tags"></i>
+                
+                
+                <a class="article-category-link" href="https://ivasoft.co.uk/tags/cookbook">cookbook</a>
+                &middot;
+                
+                
+                <a class="article-category-link" href="https://ivasoft.co.uk/tags/ffmpeg">ffmpeg</a>
+                
+                
+            </div>
+            
+        
+    </div>
+</header>
+
+        <div class="article-entry" itemprop="articleBody">
+            <p>В этом руководстве мы объясним, как использовать мультимедийный фреймвок FFmpeg для преобразования различных аудио и видео файлов.</p>
+
+<p>Стандартный синтаксис команды FFmpeg:</p>
+
+<p>ffmpeg [global_options] {[input_file_options] -i input_url} &hellip;
+ {[output_file_options] output_url} &hellip;
+Далее мы рассмотрим некоторые важные и полезные команды FFmpeg.</p>
+
+<ol>
+<li>Получение информации об аудио/видео файле
+Для этого используется следующая команда:</li>
+</ol>
+
+<pre><code>$ ffmpeg -i video.mp4
+</code></pre>
+
+<pre><code>ffmpeg version 3.3 Copyright (c) 2000-2017 the FFmpeg developers
+ built with gcc 6.3.1 (GCC) 20170306
+ configuration: --prefix=/usr --disable-debug --disable-static --disable-stripping --enable-avisynth --enable-avresample --enable-fontconfig --enable-gmp --enable-gnutls --enable-gpl --enable-ladspa --enable-libass --enable-libbluray --enable-libfreetype --enable-libfribidi --enable-libgsm --enable-libiec61883 --enable-libmodplug --enable-libmp3lame --enable-libopencore_amrnb --enable-libopencore_amrwb --enable-libopenjpeg --enable-libopus --enable-libpulse --enable-libschroedinger --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libv4l2 --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxcb --enable-libxvid --enable-netcdf --enable-shared --enable-version3
+ libavutil 55. 58.100 / 55. 58.100
+ libavcodec 57. 89.100 / 57. 89.100
+ libavformat 57. 71.100 / 57. 71.100
+ libavdevice 57. 6.100 / 57. 6.100
+ libavfilter 6. 82.100 / 6. 82.100
+ libavresample 3. 5. 0 / 3. 5. 0
+ libswscale 4. 6.100 / 4. 6.100
+ libswresample 2. 7.100 / 2. 7.100
+ libpostproc 54. 5.100 / 54. 5.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'video.mp4':
+ Metadata:
+ major_brand : isom
+ minor_version : 512
+ compatible_brands: isomiso2avc1mp41
+ encoder : Lavf57.22.100
+ Duration: 00:43:18.69, start: 0.000000, bitrate: 1039 kb/s
+ Stream #0:0(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p, 1280x714 [SAR 1071:1072 DAR 120:67], 899 kb/s, 23.98 fps, 23.98 tbr, 24k tbn, 47.95 tbc (default)
+ Metadata:
+ handler_name : VideoHandler
+ Stream #0:1(und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 132 kb/s (default)
+ Metadata:
+ handler_name : SoundHandler
+At least one output file must be specified
+</code></pre>
+
+<p>Как можно видеть из этого примера, FFmpeg отображает информацию о мультимедийном файле вместе с данными FFmpeg, такими как версия, сведения о конфигурации, уведомления об авторских правах, варианты сборки, библиотеки и т. д.
+Если вы не хотите видеть баннер FFmpeg и другие данные, а только информацию о файлах мультимедиа, используйте флаг -hide_banner, как показано ниже.</p>
+
+<p><code>$ ffmpeg -i video.mp4 -hide_banner</code>
+информация о мультимедийном файле</p>
+
+<ol>
+<li>Конвертирование видеофайлов в различные форматы
+FFmpeg - это мощный аудио и видео конвертер, позволяющий преобразовывать медиафайлы в различные форматы. Например, чтобы преобразовать файл mp4 в avi, выполните команду:</li>
+</ol>
+
+<p><code>$ ffmpeg -i video.mp4 video.avi</code>
+Точно так же вы можете конвертировать медиафайлы в любой формат по вашему выбору.
+Например, чтобы преобразовать видео в формате FLV из YouTube в формат mpeg, выполните:</p>
+
+<p><code>$ ffmpeg -i video.flv video.mpeg</code>
+Проверить список поддерживаемых FFmpeg форматов можно с помощью следующей команды:</p>
+
+<p><code>$ ffmpeg -formats</code></p>
+
+<ol>
+<li>Конвертирование видео файлов в аудио
+Чтобы преобразовать видео файл в аудио, просто укажите формат вывода, например .mp3 или .ogg, либо любой другой аудиоформат.
+Приведенная ниже команда преобразует видео файл file.mp4 в file.mp3.</li>
+</ol>
+
+<p><code>$ ffmpeg -i input.mp4 -vn -ab 320 output.mp3</code>
+Также вы можете использовать различные опции конвертирования, как показано ниже:</p>
+
+<p><code>$ ffmpeg -i input.mp4 -vn -ar 44100 -ac 2 -ab 320 -f mp3 output.mp3</code>
+Здесь:</p>
+
+<pre><code>-vn – говорит о том, что мы отключили запись видео в конечный файл.
+-ar – задает частоту дискретизации звука конечного файла. Наиболее широко используются значения 22050, 44100, 48000 Гц.
+-ac – задает количество аудиоканалов.
+-ab – задает битрейт.
+-f – формат конечного файла. В нашем случае это mp3.
+</code></pre>
+
+<ol>
+<li>Изменение разрешения видео
+Предположим, вы хотите задать для видео файла определенное разрешение, это делается с помощью следующей команды:</li>
+</ol>
+
+<p><code>$ ffmpeg -i input.mp4 -filter:v scale=1280:720 -c:a copy output.mp4</code>
+или</p>
+
+<p><code>$ ffmpeg -i input.mp4 -s 1280x720 -c:a copy output.mp4</code>
+Приведенная выше команда задает разрешение видео 1280×720.</p>
+
+<p>Аналогично, чтобы преобразовать этот файл к разрешению 640×480, выполните:</p>
+
+<p><code>$ ffmpeg -i input.mp4 -filter:v scale=640:480 -c:a copy output.mp4</code>
+или</p>
+
+<p><code>$ ffmpeg -i input.mp4 -s 640x480 -c:a copy output.mp4</code>
+5. Сжатие видео
+Всегда хочется уменьшить размер медиафайлов, чтобы освободить место на жестком диске.
+Следующая команда сжимает видео и уменьшает размер файла.</p>
+
+<p><code>$ ffmpeg -i input.mp4 -vf scale=1280:-1 -c:v libx264 -preset veryslow -crf 24 output.mp4</code>
+Помните, что при сжатии ухудшается качество. Для его сохранения можно снизить значение crf до 23 или еще ниже.</p>
+
+<ol>
+<li>Сжатие аудио.
+Вы также можете сжимать аудио файлы с помощью флага -ab, чтобы освободить место на диске.
+Предположим, что ваш файл имеет битрейт 320 кб/с. Вы можете сжать его, уменьшив битрейт.</li>
+</ol>
+
+<p><code>$ ffmpeg -i input.mp3 -ab 128 output.mp3</code>
+Ниже список доступных битрейтов:</p>
+
+<pre><code>96kbps
+112kbps
+128kbps
+160kbps
+192kbps
+256kbps
+320kbps
+</code></pre>
+
+<ol>
+<li>Удаление из медиафайла аудиопотока.
+Если вам не нужен звук в видео файле, вы можете удалить аудиопоток с помощью флага -an.</li>
+</ol>
+
+<p><code>$ ffmpeg -i input.mp4 -an output.mp4</code>
+Приведенная выше команда отменяет все связанные с аудио флаги, потому что мы удаляем звук из input.mp4.</p>
+
+<ol>
+<li>Удаление видеопотока из медиафайла.
+Аналогично, если вам не нужен видеопоток, вы можете легко удалить его из медиафайла с помощью флага «vn». Другими словами, эта команда преобразует заданный медиафайл в звуковой файл.</li>
+</ol>
+
+<p>Следующая команда удалит видео из медиафайла.</p>
+
+<p><code>$ ffmpeg -i input.mp4 -vn output.mp3</code>
+Вы также можете задать битрейт конечного файла с помощью флага &ldquo;ab&rdquo;, как показано ниже.</p>
+
+<p><code>$ ffmpeg -i input.mp4 -vn -ab 320 output.mp3</code>
+9. Извлечение изображений из видео
+Еще одна полезная функция FFmpeg - извлечение изображений из видео файлов. Например, для создания фотоальбома.
+Извлечение изображений из видео файла производится с помощью следующей команды:</p>
+
+<p><code>$ ffmpeg -i input.mp4 -r 1 -f image2 image-%2d.png</code>
+здесь:</p>
+
+<pre><code>-r – задает фреймрейт, то есть количество извлекаемых фреймов в 1 секунде видео. Значение по умолчанию - 25.
+-f – формат извлекаемого изображения.
+image-%2d.png – задает названия для наших файлов изображений. В этом примере это имена image-01.png, image-02.png, image-03.png и так далее. Если вы зададите %3d, то получите имена image-001.png, image-002.png и так далее.
+</code></pre>
+
+<ol>
+<li><p>Обрезка видео
+В целом это похоже на изменение разрешения видео. Скажем, если вам нужно видео с разрешением 300×300, вы можете получить его с помощью следующей команды:
+<code>$ ffmpeg -i input.mp4 -croptop 100 -cropbottom 100 -cropleft 300 -cropright 300 output.mp4</code>
+Необходимо помнить, что обрезка видео отрицательно влияет на его качество.</p></li>
+
+<li><p>Конвертирование части видео
+Иногда нужно конвертировать в другой формат только часть видео файла. Например, приведенная ниже команда конвертирует первые 50 секунд файла video.mp4 в файл video.avi.</p></li>
+</ol>
+
+<p><code>$ ffmpeg -i input.mp4  -t 50 output.avi</code>
+Здесь мы задаем время в секундах. Также можно задавать его в формате hh.mm.ss.</p>
+
+<ol>
+<li>Установка соотношения сторон видео
+Вы можете задать соотношение сторон видео файла с помощью флага -aspect, как показано ниже.</li>
+</ol>
+
+<p><code>$ ffmpeg -i input.mp4 -aspect 16:9 output.mp4</code>
+Обычно используются следующие соотношения:</p>
+
+<pre><code>16:9
+4:3
+16:10
+5:4
+2:21:1
+2:35:1
+2:39:1
+</code></pre>
+
+<ol>
+<li>Добавление постера в аудио файлы
+Вы можете добавлять изображения постеров в ваши файлы, чтобы они показывались во время воспроизведения файла. Это может быть полезно при размещении их на видеохостингах или веб-сайтах.</li>
+</ol>
+
+<p><code>$ ffmpeg -loop 1 -i inputimage.jpg -i inputaudio.mp3 -c:v libx264 -c:a aac -strict experimental -b:a 192k -shortest output.mp4</code></p>
+
+<ol>
+<li>Вырезание части видео файла
+Чтобы вырезать часть видео файла и сохранить ее в отдельный клип, используется команда вида:
+<code>
+$ ffmpeg -i input.mp4 -ss 00:00:50 -codec copy -t 50 output.mp4
+</code>
+здесь
+<code>
+–s – указывает время, с которого начинается вырезание видео, в нашем примере с 50-й секунды.
+-t – указывает продолжительность нашего клипа.
+</code></li>
+
+<li><p>Разрезание видео файла на несколько частей
+Некоторые сайты позволяют загружать видео файлы не больше определенного размера. В таком случае вы можете разрезать большой файл на части меньшего размера.</p>
+
+<pre><code>$ ffmpeg -i input.mp4 -t 00:00:30 -c copy part1.mp4 -ss 00:00:30 -codec copy part2.mp4
+</code></pre>
+
+<p>Здесь -t 00:00:30 показывает, что первая часть берется от начала видео до 30-й секунды. -ss 00:00:30 задает начальную точку для второй части. То есть вторая часть берется с 30-й секунды до конца оригинального видео.</p></li>
+
+<li><p>Объединение нескольких видео файлов
+FFmpeg также позволяет объединять несколько видео файлов в один.</p></li>
+</ol>
+
+<p>Создайте файл join.txt, в котором записаны пути ко всем видео файлам, которые вы хотите объединить. Все части должны иметь один формат (один кодек).</p>
+
+<p>/home/sk/myvideos/part1.mp4
+/home/sk/myvideos/part2.mp4
+/home/sk/myvideos/part3.mp4
+/home/sk/myvideos/part4.mp4</p>
+
+<p>Теперь вы можете объединить их с помощью команды:</p>
+
+<pre><code>$ ffmpeg -f concat -i join.txt -c copy output.mp4
+</code></pre>
+
+<ol>
+<li>Добавление субтитров в видео файл
+С помощью FFmpeg мы также можем добавлять субтитры в видео файл. Это делается с помощью следующей команды:</li>
+</ol>
+
+<pre><code>$ fmpeg -i input.mp4 -i subtitle.srt -map 0 -map 1 -c copy -c:v libx264 -crf 23 -preset veryfast output.mp4
+</code></pre>
+
+<ol>
+<li>Тестирование видео и аудио файлов
+Если вам хочется проверить, правильно ли было произведено конвертирование файла, вы можете воспроизвести его в терминале с помощью команды:<code>$ ffplay video.mp4</code>
+Аналогично вы можете протестировать аудио файл, как показано ниже.</li>
+</ol>
+
+<p>$ ffplay audio.mp3</p>
+
+<ol>
+<li>Ускорение/замедление воспроизведения видео
+FFmpeg позволяет вам регулировать скорость воспроизведения. Для увеличения скорости воспроизведения используется команда:</li>
+</ol>
+
+<p>$ ffmpeg -i inputvideo.mp4 -vf &ldquo;setpts=0.5*PTS&rdquo; outputvideo.mp4
+Для замедления скорости воспроизведения:
+$ ffmpeg -i inputvideo.mp4 -vf &ldquo;setpts=4.0*PTS&rdquo; outputvideo.mp4
+20. Получение помощи
+В этом руководстве мы показали только самые основные и часто используемые команды FFmpeg. На самом деле он имеет огромное количество различных опций для реализации разных продвинутых возможностей. Найти их описание можно на man-странице:</p>
+
+<p>$ man ffmpeg</p>
+
+<p><a href="https://github.com/chubin/awesome-console-services">Оригинал</a></p>
+
+<p><a href="https://habrahabr.ru/post/289050">Оригинал</a></p>
+
+        </div>
+        <footer class="article-footer">
+    <a data-url="https://ivasoft.co.uk/post/ffmpeg-main/" data-id="07328c902fb84f85b312eac4ebd2f33c" class="article-share-link">
+        <i class="fa fa-share"></i>
+        
+    </a>
+    
+    <a href="https://ivasoft.co.uk/post/ffmpeg-main/#disqus_thread" class="article-comment-link">
+        
+    </a>
+    
+
+    <script>
+    (function ($) {
+        
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+    </script>
+</footer>
+
+    </div>
+
+    
+<nav id="article-nav">
+    
+    <a href="https://ivasoft.co.uk/post/mysql-cookbook/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">
+          
+      </strong>
+      <div class="article-nav-title">MySQL Cookbook</div>
+    </a>
+    
+
+    
+</nav>
+
+
+</article>
+
+
+<section id="comments">
+    <div id="disqus_thread">
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "http-oleiva-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+</section>
+
+
+    </section>
+
+   	
+    	<aside id="sidebar">
+    
+  
+    
+
+
+<div class="widget-wrap">
+    <h3 class="widget-title">
+        
+    </h3>
+    <div class="widget">
+        <ul class="category-list">
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://ivasoft.co.uk/tags/checklist">
+                    checklist
+                </a>
+                <span class="category-list-count">2</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://ivasoft.co.uk/tags/cookbook">
+                    cookbook
+                </a>
+                <span class="category-list-count">3</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://ivasoft.co.uk/tags/ffmpeg">
+                    ffmpeg
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://ivasoft.co.uk/tags/interview">
+                    interview
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://ivasoft.co.uk/tags/java">
+                    java
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://ivasoft.co.uk/tags/job">
+                    job
+                </a>
+                <span class="category-list-count">2</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://ivasoft.co.uk/tags/mysql">
+                    mysql
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://ivasoft.co.uk/tags/postgres">
+                    postgres
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://ivasoft.co.uk/tags/scala">
+                    scala
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://ivasoft.co.uk/tags/sql">
+                    sql
+                </a>
+                <span class="category-list-count">2</span>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+    
+
+
+<div class="widget-wrap">
+    <h3 class="widget-title">
+        
+    </h3>
+    <div class="widget tagcloud">
+        
+        
+        <a href="https://ivasoft.co.uk/tags/checklist" style="font-size: 12px;">checklist</a>
+        
+        
+        <a href="https://ivasoft.co.uk/tags/cookbook" style="font-size: 12px;">cookbook</a>
+        
+        
+        <a href="https://ivasoft.co.uk/tags/ffmpeg" style="font-size: 12px;">ffmpeg</a>
+        
+        
+        <a href="https://ivasoft.co.uk/tags/interview" style="font-size: 12px;">interview</a>
+        
+        
+        <a href="https://ivasoft.co.uk/tags/java" style="font-size: 12px;">java</a>
+        
+        
+        <a href="https://ivasoft.co.uk/tags/job" style="font-size: 12px;">job</a>
+        
+        
+        <a href="https://ivasoft.co.uk/tags/mysql" style="font-size: 12px;">mysql</a>
+        
+        
+        <a href="https://ivasoft.co.uk/tags/postgres" style="font-size: 12px;">postgres</a>
+        
+        
+        <a href="https://ivasoft.co.uk/tags/scala" style="font-size: 12px;">scala</a>
+        
+        
+        <a href="https://ivasoft.co.uk/tags/sql" style="font-size: 12px;">sql</a>
+        
+    </div>
+</div>
+
+
+
+
+
+    <div id="toTop" class="fa fa-angle-up"></div>
+</aside>
+
+    
+	</div>
+</div>
+
+<footer id="footer">
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019
+      Powered by <a href="http://Ivasoft.co.uk">Oleh Ivashko</a>
+    </div>
+  </div>
+</footer>
+
+
+<script type="text/javascript">
+	console.log("statystics");
+</script>
+
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(51714932, "init", {
+        id:51714932,
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/51714932" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-37590395-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-37590395-2');
+</script>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-85686153-4', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+<script src="https://ivasoft.co.uk/src/fancybox/jquery.fancybox.pack.js"></script>
+<script src="https://ivasoft.co.uk/src/js/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']]}
+  });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+
+
+</body>
+</html>
