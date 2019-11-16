@@ -1,30 +1,31 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Oleh.Ivashko blog</title>
-    <link>https://ivasoft.co.uk/categories/</link>
+    <link>https://oleiva.github.com/categories/</link>
     <description>Recent content in Categories on Oleh.Ivashko blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Sun, 16 Dec 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://ivasoft.co.uk/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://oleiva.github.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Cookbook</title>
-      <link>https://ivasoft.co.uk/categories/cookbook/</link>
+      <title>cookbook</title>
+      <link>https://oleiva.github.com/categories/cookbook/</link>
       <pubDate>Sun, 16 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://ivasoft.co.uk/categories/cookbook/</guid>
+      <guid>https://oleiva.github.com/categories/cookbook/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Work</title>
-      <link>https://ivasoft.co.uk/categories/work/</link>
+      <title>work</title>
+      <link>https://oleiva.github.com/categories/work/</link>
       <pubDate>Sun, 02 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://ivasoft.co.uk/categories/work/</guid>
+      <guid>https://oleiva.github.com/categories/work/</guid>
       <description></description>
     </item>
     

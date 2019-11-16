@@ -1,34 +1,35 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Cookbook on Oleh.Ivashko blog</title>
-    <link>https://ivasoft.co.uk/categories/cookbook/</link>
-    <description>Recent content in Cookbook on Oleh.Ivashko blog</description>
+    <title>cookbook on Oleh.Ivashko blog</title>
+    <link>https://oleiva.github.com/categories/cookbook/</link>
+    <description>Recent content in cookbook on Oleh.Ivashko blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 16 Dec 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://ivasoft.co.uk/categories/cookbook/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://oleiva.github.com/categories/cookbook/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>FFmpeg</title>
-      <link>https://ivasoft.co.uk/post/ffmpeg-main/</link>
+      <link>https://oleiva.github.com/post/ffmpeg-main/</link>
       <pubDate>Sun, 16 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://ivasoft.co.uk/post/ffmpeg-main/</guid>
+      <guid>https://oleiva.github.com/post/ffmpeg-main/</guid>
       <description>В этом руководстве мы объясним, как использовать мультимедийный фреймвок FFmpeg для преобразования различных аудио и видео файлов.
 Стандартный синтаксис команды FFmpeg:
 ffmpeg [global_options] {[input_file_options] -i input_url} &amp;hellip; {[output_file_options] output_url} &amp;hellip; Далее мы рассмотрим некоторые важные и полезные команды FFmpeg.
- Получение информации об аудио/видео файле Для этого используется следующая команда:  $ ffmpeg -i video.mp4  ffmpeg version 3.3 Copyright (c) 2000-2017 the FFmpeg developers built with gcc 6.3.1 (GCC) 20170306 configuration: --prefix=/usr --disable-debug --disable-static --disable-stripping --enable-avisynth --enable-avresample --enable-fontconfig --enable-gmp --enable-gnutls --enable-gpl --enable-ladspa --enable-libass --enable-libbluray --enable-libfreetype --enable-libfribidi --enable-libgsm --enable-libiec61883 --enable-libmodplug --enable-libmp3lame --enable-libopencore_amrnb --enable-libopencore_amrwb --enable-libopenjpeg --enable-libopus --enable-libpulse --enable-libschroedinger --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libv4l2 --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxcb --enable-libxvid --enable-netcdf --enable-shared --enable-version3 libavutil 55.</description>
+ Получение информации об аудио/видео файле Для этого используется следующая команда:
+$ ffmpeg -i video.mp4  ffmpeg version 3.3 Copyright (c) 2000-2017 the FFmpeg developers built with gcc 6.3.1 (GCC) 20170306 configuration: --prefix=/usr --disable-debug --disable-static --disable-stripping --enable-avisynth --enable-avresample --enable-fontconfig --enable-gmp --enable-gnutls --enable-gpl --enable-ladspa --enable-libass --enable-libbluray --enable-libfreetype --enable-libfribidi --enable-libgsm --enable-libiec61883 --enable-libmodplug --enable-libmp3lame --enable-libopencore_amrnb --enable-libopencore_amrwb --enable-libopenjpeg --enable-libopus --enable-libpulse --enable-libschroedinger --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libv4l2 --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxcb --enable-libxvid --enable-netcdf --enable-shared --enable-version3 libavutil 55.</description>
     </item>
     
     <item>
       <title>MySQL Cookbook</title>
-      <link>https://ivasoft.co.uk/post/mysql-cookbook/</link>
+      <link>https://oleiva.github.com/post/mysql-cookbook/</link>
       <pubDate>Sun, 16 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://ivasoft.co.uk/post/mysql-cookbook/</guid>
+      <guid>https://oleiva.github.com/post/mysql-cookbook/</guid>
       <description>Stop the MySQL service
 sudo /etc/init.d/mysql stop (Ubuntu, Debian): sudo /etc/init.d/mysqld stop(CentOS, Fedora, Red Hat)  Start MySQL without a password
 sudo mysqld_safe --skip-grant-tables &amp;amp;  Connect to MySQL
@@ -38,10 +39,10 @@ use mysql; update user set password=PASSWORD(&amp;quot;mynewpassword&amp;quot;) 
     
     <item>
       <title>Postgres Cookbook</title>
-      <link>https://ivasoft.co.uk/post/postgres-cookbook/</link>
+      <link>https://oleiva.github.com/post/postgres-cookbook/</link>
       <pubDate>Sun, 16 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://ivasoft.co.uk/post/postgres-cookbook/</guid>
+      <guid>https://oleiva.github.com/post/postgres-cookbook/</guid>
       <description>Начало работы с PostgreSQL Чтобы установить PostgreSQL 9.2 в Ubuntu 12.10, выполните следующие команды:
 sudo apt-add-repository ppa:pitti/postgresql sudo apt-get update sudo apt-get install postgresql-9.2  Дополнение: Для других версий PostgreSQL, версий Ubuntu, а также других дистрибутивов Linux, последовательность шагов аналогичная. Только вместо приведенного PPA я бы все же рекомендовал использовать официальные репозитории пакетов, приведенные на postgresql.org. Также вас могут заинтересовать заметки Потоковая репликация в PostgreSQL и пример фейловера, Некоторые интересные отличия PostgreSQL от MySQL и Как спроектировать схему базы данных.</description>
     </item>
