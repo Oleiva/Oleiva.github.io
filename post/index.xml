@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Oleh.Ivashko blog</title>
-    <link>https://oleiva.github.com/post/</link>
+    <link>https://ivasoft.co.uk/post/</link>
     <description>Recent content in Posts on Oleh.Ivashko blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 16 Dec 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://oleiva.github.com/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ivasoft.co.uk/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>FFmpeg</title>
-      <link>https://oleiva.github.com/post/ffmpeg-main/</link>
+      <link>https://ivasoft.co.uk/post/ffmpeg-main/</link>
       <pubDate>Sun, 16 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://oleiva.github.com/post/ffmpeg-main/</guid>
+      <guid>https://ivasoft.co.uk/post/ffmpeg-main/</guid>
       <description>В этом руководстве мы объясним, как использовать мультимедийный фреймвок FFmpeg для преобразования различных аудио и видео файлов.
 Стандартный синтаксис команды FFmpeg:
 ffmpeg [global_options] {[input_file_options] -i input_url} &amp;hellip; {[output_file_options] output_url} &amp;hellip; Далее мы рассмотрим некоторые важные и полезные команды FFmpeg.
@@ -26,10 +26,10 @@ $ ffmpeg -i video.mp4  ffmpeg version 3.3 Copyright (c) 2000-2017 the FFmpeg dev
     
     <item>
       <title>MySQL Cookbook</title>
-      <link>https://oleiva.github.com/post/mysql-cookbook/</link>
+      <link>https://ivasoft.co.uk/post/mysql-cookbook/</link>
       <pubDate>Sun, 16 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://oleiva.github.com/post/mysql-cookbook/</guid>
+      <guid>https://ivasoft.co.uk/post/mysql-cookbook/</guid>
       <description>Stop the MySQL service
 sudo /etc/init.d/mysql stop (Ubuntu, Debian): sudo /etc/init.d/mysqld stop(CentOS, Fedora, Red Hat)  Start MySQL without a password
 sudo mysqld_safe --skip-grant-tables &amp;amp;  Connect to MySQL
@@ -39,39 +39,39 @@ use mysql; update user set password=PASSWORD(&amp;quot;mynewpassword&amp;quot;) 
     
     <item>
       <title>Postgres Cookbook</title>
-      <link>https://oleiva.github.com/post/postgres-cookbook/</link>
+      <link>https://ivasoft.co.uk/post/postgres-cookbook/</link>
       <pubDate>Sun, 16 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://oleiva.github.com/post/postgres-cookbook/</guid>
+      <guid>https://ivasoft.co.uk/post/postgres-cookbook/</guid>
       <description>Начало работы с PostgreSQL Чтобы установить PostgreSQL 9.2 в Ubuntu 12.10, выполните следующие команды:
 sudo apt-add-repository ppa:pitti/postgresql sudo apt-get update sudo apt-get install postgresql-9.2  Дополнение: Для других версий PostgreSQL, версий Ubuntu, а также других дистрибутивов Linux, последовательность шагов аналогичная. Только вместо приведенного PPA я бы все же рекомендовал использовать официальные репозитории пакетов, приведенные на postgresql.org. Также вас могут заинтересовать заметки Потоковая репликация в PostgreSQL и пример фейловера, Некоторые интересные отличия PostgreSQL от MySQL и Как спроектировать схему базы данных.</description>
     </item>
     
     <item>
       <title>Awesome-console-services</title>
-      <link>https://oleiva.github.com/post/awesome-console-services/</link>
+      <link>https://ivasoft.co.uk/post/awesome-console-services/</link>
       <pubDate>Sun, 02 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://oleiva.github.com/post/awesome-console-services/</guid>
+      <guid>https://ivasoft.co.uk/post/awesome-console-services/</guid>
       <description>awesome-console-services A curated list of awesome console services (reachable via HTTP, HTTPS and other network protocols)
 IP address  curl https://canihazip.com/s curl ipinfo.io/ip curl icanhazip.com curl curlmyip.net curl ipecho.net/plain curl ifcfg.me curl ip-addr.es dig +short myip.opendns.com @resolver1.opendns.com curl ident.me (see http://api.ident.me/ for the full API reference) curl ipaddr.site  IP-based geolocation  curl ipinfo.io/8.8.8.8 or curl ipinfo.io/8.8.8.8/loc curl freegeoip.net/csv/8.8.8.8 or freegeoip.net/xml/4.2.2.2 or freegeoip.net/json/github.com  Text Sharing (like pastebin)  ix.</description>
     </item>
     
     <item>
       <title>Чек-лист предложений о работе</title>
-      <link>https://oleiva.github.com/post/checklist-for-a-job-offer/</link>
+      <link>https://ivasoft.co.uk/post/checklist-for-a-job-offer/</link>
       <pubDate>Sun, 02 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://oleiva.github.com/post/checklist-for-a-job-offer/</guid>
+      <guid>https://ivasoft.co.uk/post/checklist-for-a-job-offer/</guid>
       <description>1. Рабочий график и можно ли его двигать. Я люблю поспать. Но на моей прошлой работе «рабочее утро» начиналось в 7:30. Мало того, что я довольно часто не мог прийти к этому времени, я еще пол дня занимался тем, что пытался привести себя в рабочую форму. Где то до 10:00. С 10:30 до 11:30 я усердно работал. Потом был обед. А потом мне хотелось спать, а не работать, т.к. я не высыпался еще с утра.</description>
     </item>
     
     <item>
       <title>Java Interview Questions.</title>
-      <link>https://oleiva.github.com/post/java-interview-questions/</link>
+      <link>https://ivasoft.co.uk/post/java-interview-questions/</link>
       <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://oleiva.github.com/post/java-interview-questions/</guid>
+      <guid>https://ivasoft.co.uk/post/java-interview-questions/</guid>
       <description>I have written a lot of posts for java interview questions, this is a placeholder for all those posts. You can bookmark this post and come again in future to see the new additions.
 1. Core Java Interview Questions and Answers Core Java is the starting point of any Java interview. Whether you are fresher or experienced in java, having a strong grip on Core Java is very important to clear the interview.</description>
     </item>

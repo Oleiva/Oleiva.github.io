@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ffmpeg on Oleh.Ivashko blog</title>
-    <link>https://oleiva.github.com/tags/ffmpeg/</link>
+    <link>https://ivasoft.co.uk/tags/ffmpeg/</link>
     <description>Recent content in ffmpeg on Oleh.Ivashko blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 16 Dec 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://oleiva.github.com/tags/ffmpeg/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ivasoft.co.uk/tags/ffmpeg/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>FFmpeg</title>
-      <link>https://oleiva.github.com/post/ffmpeg-main/</link>
+      <link>https://ivasoft.co.uk/post/ffmpeg-main/</link>
       <pubDate>Sun, 16 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://oleiva.github.com/post/ffmpeg-main/</guid>
+      <guid>https://ivasoft.co.uk/post/ffmpeg-main/</guid>
       <description>В этом руководстве мы объясним, как использовать мультимедийный фреймвок FFmpeg для преобразования различных аудио и видео файлов.
 Стандартный синтаксис команды FFmpeg:
 ffmpeg [global_options] {[input_file_options] -i input_url} &amp;hellip; {[output_file_options] output_url} &amp;hellip; Далее мы рассмотрим некоторые важные и полезные команды FFmpeg.

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>mysql on Oleh.Ivashko blog</title>
-    <link>https://oleiva.github.com/tags/mysql/</link>
+    <link>https://ivasoft.co.uk/tags/mysql/</link>
     <description>Recent content in mysql on Oleh.Ivashko blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 16 Dec 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://oleiva.github.com/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ivasoft.co.uk/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>MySQL Cookbook</title>
-      <link>https://oleiva.github.com/post/mysql-cookbook/</link>
+      <link>https://ivasoft.co.uk/post/mysql-cookbook/</link>
       <pubDate>Sun, 16 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://oleiva.github.com/post/mysql-cookbook/</guid>
+      <guid>https://ivasoft.co.uk/post/mysql-cookbook/</guid>
       <description>Stop the MySQL service
 sudo /etc/init.d/mysql stop (Ubuntu, Debian): sudo /etc/init.d/mysqld stop(CentOS, Fedora, Red Hat)  Start MySQL without a password
 sudo mysqld_safe --skip-grant-tables &amp;amp;  Connect to MySQL
