@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>interview on Oleh.Ivashko blog</title>
-    <link>https://ivasoft.co.uk/tags/interview/</link>
+    <link>oleiva.github.io/tags/interview/</link>
     <description>Recent content in interview on Oleh.Ivashko blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://ivasoft.co.uk/tags/interview/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="oleiva.github.io/tags/interview/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Java Interview Questions.</title>
-      <link>https://ivasoft.co.uk/post/java-interview-questions/</link>
+      <link>oleiva.github.io/post/java-interview-questions/</link>
       <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://ivasoft.co.uk/post/java-interview-questions/</guid>
+      <guid>oleiva.github.io/post/java-interview-questions/</guid>
       <description>I have written a lot of posts for java interview questions, this is a placeholder for all those posts. You can bookmark this post and come again in future to see the new additions.
 1. Core Java Interview Questions and Answers Core Java is the starting point of any Java interview. Whether you are fresher or experienced in java, having a strong grip on Core Java is very important to clear the interview.</description>
     </item>

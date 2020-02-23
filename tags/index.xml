@@ -2,102 +2,102 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Oleh.Ivashko blog</title>
-    <link>https://ivasoft.co.uk/tags/</link>
+    <link>oleiva.github.io/tags/</link>
     <description>Recent content in Tags on Oleh.Ivashko blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 16 Dec 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://ivasoft.co.uk/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="oleiva.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>cookbook</title>
-      <link>https://ivasoft.co.uk/tags/cookbook/</link>
+      <link>oleiva.github.io/tags/cookbook/</link>
       <pubDate>Sun, 16 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://ivasoft.co.uk/tags/cookbook/</guid>
+      <guid>oleiva.github.io/tags/cookbook/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ffmpeg</title>
-      <link>https://ivasoft.co.uk/tags/ffmpeg/</link>
+      <link>oleiva.github.io/tags/ffmpeg/</link>
       <pubDate>Sun, 16 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://ivasoft.co.uk/tags/ffmpeg/</guid>
+      <guid>oleiva.github.io/tags/ffmpeg/</guid>
       <description></description>
     </item>
     
     <item>
       <title>mysql</title>
-      <link>https://ivasoft.co.uk/tags/mysql/</link>
+      <link>oleiva.github.io/tags/mysql/</link>
       <pubDate>Sun, 16 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://ivasoft.co.uk/tags/mysql/</guid>
+      <guid>oleiva.github.io/tags/mysql/</guid>
       <description></description>
     </item>
     
     <item>
       <title>postgres</title>
-      <link>https://ivasoft.co.uk/tags/postgres/</link>
+      <link>oleiva.github.io/tags/postgres/</link>
       <pubDate>Sun, 16 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://ivasoft.co.uk/tags/postgres/</guid>
+      <guid>oleiva.github.io/tags/postgres/</guid>
       <description></description>
     </item>
     
     <item>
       <title>sql</title>
-      <link>https://ivasoft.co.uk/tags/sql/</link>
+      <link>oleiva.github.io/tags/sql/</link>
       <pubDate>Sun, 16 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://ivasoft.co.uk/tags/sql/</guid>
+      <guid>oleiva.github.io/tags/sql/</guid>
       <description></description>
     </item>
     
     <item>
       <title>checklist</title>
-      <link>https://ivasoft.co.uk/tags/checklist/</link>
+      <link>oleiva.github.io/tags/checklist/</link>
       <pubDate>Sun, 02 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://ivasoft.co.uk/tags/checklist/</guid>
+      <guid>oleiva.github.io/tags/checklist/</guid>
       <description></description>
     </item>
     
     <item>
       <title>job</title>
-      <link>https://ivasoft.co.uk/tags/job/</link>
+      <link>oleiva.github.io/tags/job/</link>
       <pubDate>Sun, 02 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://ivasoft.co.uk/tags/job/</guid>
+      <guid>oleiva.github.io/tags/job/</guid>
       <description></description>
     </item>
     
     <item>
       <title>interview</title>
-      <link>https://ivasoft.co.uk/tags/interview/</link>
+      <link>oleiva.github.io/tags/interview/</link>
       <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://ivasoft.co.uk/tags/interview/</guid>
+      <guid>oleiva.github.io/tags/interview/</guid>
       <description></description>
     </item>
     
     <item>
       <title>java</title>
-      <link>https://ivasoft.co.uk/tags/java/</link>
+      <link>oleiva.github.io/tags/java/</link>
       <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://ivasoft.co.uk/tags/java/</guid>
+      <guid>oleiva.github.io/tags/java/</guid>
       <description></description>
     </item>
     
     <item>
       <title>scala</title>
-      <link>https://ivasoft.co.uk/tags/scala/</link>
+      <link>oleiva.github.io/tags/scala/</link>
       <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://ivasoft.co.uk/tags/scala/</guid>
+      <guid>oleiva.github.io/tags/scala/</guid>
       <description></description>
     </item>
     

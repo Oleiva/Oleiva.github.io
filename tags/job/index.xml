@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>job on Oleh.Ivashko blog</title>
-    <link>https://ivasoft.co.uk/tags/job/</link>
+    <link>oleiva.github.io/tags/job/</link>
     <description>Recent content in job on Oleh.Ivashko blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 02 Apr 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://ivasoft.co.uk/tags/job/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="oleiva.github.io/tags/job/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Awesome-console-services</title>
-      <link>https://ivasoft.co.uk/post/awesome-console-services/</link>
+      <link>oleiva.github.io/post/awesome-console-services/</link>
       <pubDate>Sun, 02 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://ivasoft.co.uk/post/awesome-console-services/</guid>
+      <guid>oleiva.github.io/post/awesome-console-services/</guid>
       <description>awesome-console-services A curated list of awesome console services (reachable via HTTP, HTTPS and other network protocols)
 IP address  curl https://canihazip.com/s curl ipinfo.io/ip curl icanhazip.com curl curlmyip.net curl ipecho.net/plain curl ifcfg.me curl ip-addr.es dig +short myip.opendns.com @resolver1.opendns.com curl ident.me (see http://api.ident.me/ for the full API reference) curl ipaddr.site  IP-based geolocation  curl ipinfo.io/8.8.8.8 or curl ipinfo.io/8.8.8.8/loc curl freegeoip.net/csv/8.8.8.8 or freegeoip.net/xml/4.2.2.2 or freegeoip.net/json/github.com  Text Sharing (like pastebin)  ix.</description>
     </item>
     
     <item>
       <title>Чек-лист предложений о работе</title>
-      <link>https://ivasoft.co.uk/post/checklist-for-a-job-offer/</link>
+      <link>oleiva.github.io/post/checklist-for-a-job-offer/</link>
       <pubDate>Sun, 02 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://ivasoft.co.uk/post/checklist-for-a-job-offer/</guid>
+      <guid>oleiva.github.io/post/checklist-for-a-job-offer/</guid>
       <description>1. Рабочий график и можно ли его двигать. Я люблю поспать. Но на моей прошлой работе «рабочее утро» начиналось в 7:30. Мало того, что я довольно часто не мог прийти к этому времени, я еще пол дня занимался тем, что пытался привести себя в рабочую форму. Где то до 10:00. С 10:30 до 11:30 я усердно работал. Потом был обед. А потом мне хотелось спать, а не работать, т.к. я не высыпался еще с утра.</description>
     </item>
     
